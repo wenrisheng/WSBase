@@ -36,10 +36,10 @@
     return tempPath;
 }
 
-+ (NSString *)getResourcePathInBundleWithName:(NSString *)name type:(NSString *)type
++ (NSString *)getBundlePath
 {
-    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:name ofType:type];
-    return resourcePath;
+    NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
+    return bundlePath;
 }
 
 @end

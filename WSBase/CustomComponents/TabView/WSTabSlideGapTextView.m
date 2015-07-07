@@ -36,7 +36,7 @@
     _tabSlideItemViewArray = [[NSMutableArray alloc] init];
     NSUInteger itemCount = dataArray.count;
    
-    CGFloat itemCountFloat = (float)itemCount / 1.00;
+//    CGFloat itemCountFloat = (float)itemCount / 1.00;
     for (int i = 0; i < itemCount; i++) {
         NSDictionary *dic = [dataArray objectAtIndex:i];
         NSString *title = [dic objectForKey:TABSLIDEGAPTEXTVIEW_IMAGE_TITLE];

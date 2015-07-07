@@ -26,6 +26,8 @@
 #import "WSDictionaryUtil.h"
 #import "WSJsonUtil.h"
 #import "WSArchiveUtil.h"
+#import "WSBundleUtil.h"
+#import "WSFileUtil.h"
 
 /***************BaseStaticLibrary静态库*****************/
 #import "WSBaseViewController.h"

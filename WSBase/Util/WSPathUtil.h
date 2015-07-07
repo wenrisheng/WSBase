@@ -39,13 +39,10 @@
 + (NSString *)getTempPath;
 
 /**
- *  获取bundle下的文件路径
+ *  获取bundle路径
  *
- *  @param name 文件名
- *  @param type 文件类型
- *
- *  @return
+ *  @return 
  */
-+ (NSString *)getResourcePathInBundleWithName:(NSString *)name type:(NSString *)type;
++ (NSString *)getBundlePath;
 
 @end
