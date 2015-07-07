@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WSSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbo-Qv-wpN">
+                    <rect key="frame" x="0.0" y="7" width="220" height="30"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索商店或商品" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lHL-xv-rYZ">
+                            <rect key="frame" x="33" y="0.0" width="182" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="y0j-iA-J3U">
+                            <rect key="frame" x="8" y="4.5" width="20" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="1zX-Hd-189"/>
+                                <constraint firstAttribute="width" constant="20" id="3AC-F9-d9k"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.83137254901960789" green="0.28627450980392155" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="y0j-iA-J3U" firstAttribute="leading" secondItem="wbo-Qv-wpN" secondAttribute="leading" constant="8" id="Esl-gT-ybT"/>
+                        <constraint firstAttribute="trailing" secondItem="lHL-xv-rYZ" secondAttribute="trailing" constant="5" id="Qsf-Wh-s3H"/>
+                        <constraint firstAttribute="centerY" secondItem="y0j-iA-J3U" secondAttribute="centerY" id="VcG-K8-L9J"/>
+                        <constraint firstItem="lHL-xv-rYZ" firstAttribute="top" secondItem="wbo-Qv-wpN" secondAttribute="top" id="fav-sV-Pzv"/>
+                        <constraint firstItem="lHL-xv-rYZ" firstAttribute="leading" secondItem="y0j-iA-J3U" secondAttribute="trailing" constant="5" id="kb8-mb-kYE"/>
+                        <constraint firstAttribute="bottom" secondItem="lHL-xv-rYZ" secondAttribute="bottom" id="uTn-Em-imc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.89803921568627454" green="0.38039215686274508" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wbo-Qv-wpN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="5kH-8I-j5z"/>
+                <constraint firstAttribute="trailing" secondItem="wbo-Qv-wpN" secondAttribute="trailing" id="aeL-Jv-u6d"/>
+                <constraint firstAttribute="bottom" secondItem="wbo-Qv-wpN" secondAttribute="bottom" constant="7" id="pw2-KH-zyM"/>
+                <constraint firstItem="wbo-Qv-wpN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uVT-uX-fub"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="wbo-Qv-wpN" id="eGX-29-ItE"/>
+                <outlet property="imageView" destination="y0j-iA-J3U" id="cRf-rl-bIr"/>
+                <outlet property="textField" destination="lHL-xv-rYZ" id="jEb-Zi-kC1"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search-icon.png" width="32" height="32"/>
+    </resources>
+</document>

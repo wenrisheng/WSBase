@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WSTabSlideItemView">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzm-VD-zDt">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="butAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="EXC-34-fEX"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WP-GK-5VT">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.87843137250000003" green="0.1137254902" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3WP-GK-5VT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="67o-GH-08W"/>
+                <constraint firstItem="3WP-GK-5VT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6zz-dS-4Kt"/>
+                <constraint firstAttribute="bottom" secondItem="nzm-VD-zDt" secondAttribute="bottom" id="9L0-Dl-cxX"/>
+                <constraint firstAttribute="bottom" secondItem="3WP-GK-5VT" secondAttribute="bottom" id="Cvh-VE-5es"/>
+                <constraint firstAttribute="trailing" secondItem="nzm-VD-zDt" secondAttribute="trailing" id="F8i-wF-Lt0"/>
+                <constraint firstItem="nzm-VD-zDt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="J9e-3E-Wum"/>
+                <constraint firstAttribute="trailing" secondItem="3WP-GK-5VT" secondAttribute="trailing" id="TA7-6a-aaz"/>
+                <constraint firstItem="nzm-VD-zDt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uxl-aI-fC2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label" destination="3WP-GK-5VT" id="n3x-9T-9yQ"/>
+            </connections>
+            <point key="canvasLocation" x="205" y="212"/>
+        </view>
+    </objects>
+</document>

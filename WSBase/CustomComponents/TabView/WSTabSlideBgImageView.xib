@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WSTabSlideBgImageView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9H-Af-qT9">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.87450980392156863" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-QB-ZKk">
+                    <rect key="frame" x="0.0" y="39" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.75390625" green="0.75390625" blue="0.75390625" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="mPB-ln-bLE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tM4-od-19s">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.72253787878787878" green="0.72253787878787878" blue="0.72253787878787878" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="hfX-YH-Y2O"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAf-Pc-e44">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="P9H-Af-qT9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2g4-Ba-gID"/>
+                <constraint firstItem="P9H-Af-qT9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="46I-T0-LZx"/>
+                <constraint firstAttribute="trailing" secondItem="AAf-Pc-e44" secondAttribute="trailing" id="9kH-Ks-dsa"/>
+                <constraint firstAttribute="bottom" secondItem="AAf-Pc-e44" secondAttribute="bottom" constant="10" id="ABt-Q8-Pgq"/>
+                <constraint firstItem="AAf-Pc-e44" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="D7Z-di-awI"/>
+                <constraint firstItem="AAf-Pc-e44" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EV3-P1-TNh"/>
+                <constraint firstItem="aRA-QB-ZKk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WVk-5R-ofy"/>
+                <constraint firstItem="tM4-od-19s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cYo-Oq-uhN"/>
+                <constraint firstAttribute="trailing" secondItem="P9H-Af-qT9" secondAttribute="trailing" id="eao-PT-NRd"/>
+                <constraint firstAttribute="bottom" secondItem="P9H-Af-qT9" secondAttribute="bottom" constant="10" id="k9z-WQ-Zp5"/>
+                <constraint firstItem="tM4-od-19s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lVt-1u-2gc"/>
+                <constraint firstAttribute="bottom" secondItem="aRA-QB-ZKk" secondAttribute="bottom" constant="10" id="o8J-OA-p5e"/>
+                <constraint firstAttribute="trailing" secondItem="aRA-QB-ZKk" secondAttribute="trailing" id="rjH-CD-MSC"/>
+                <constraint firstAttribute="trailing" secondItem="tM4-od-19s" secondAttribute="trailing" id="vtT-oC-hLp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="AAf-Pc-e44" id="OfG-4U-XDU"/>
+                <outlet property="saperateView" destination="aRA-QB-ZKk" id="1fh-ed-mKu"/>
+            </connections>
+            <point key="canvasLocation" x="-155" y="298"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WSTableToastViewCell" rowHeight="47" id="KGk-i7-Jjw" customClass="WSTableToastViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOd-mI-Mjl">
+                        <rect key="frame" x="10" y="5" width="300" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufr-P4-eXY">
+                        <rect key="frame" x="0.0" y="45" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Jad-so-jSt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ufr-P4-eXY" firstAttribute="top" secondItem="AOd-mI-Mjl" secondAttribute="bottom" constant="5" id="7Sd-Z1-bZb"/>
+                    <constraint firstItem="AOd-mI-Mjl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="7ga-W9-ufN"/>
+                    <constraint firstItem="AOd-mI-Mjl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CvM-h9-LBa"/>
+                    <constraint firstItem="ufr-P4-eXY" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" id="Vy3-5Q-InE"/>
+                    <constraint firstItem="ufr-P4-eXY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XNB-yF-GJS"/>
+                    <constraint firstAttribute="trailing" secondItem="ufr-P4-eXY" secondAttribute="trailing" id="doF-Xp-lHh"/>
+                    <constraint firstAttribute="trailing" secondItem="AOd-mI-Mjl" secondAttribute="trailing" constant="10" id="ju2-SS-J8n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="leftLabel" destination="AOd-mI-Mjl" id="pzP-T2-34H"/>
+            </connections>
+            <point key="canvasLocation" x="225" y="259.5"/>
+        </tableViewCell>
+    </objects>
+</document>
