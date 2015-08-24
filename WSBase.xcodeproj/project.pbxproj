@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C33E7F61B6A26A500F19CD7 /* WSService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C33E7F31B6A26A500F19CD7 /* WSService.m */; };
+		7C33E7F71B6A26A500F19CD7 /* WSUploadDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C33E7F51B6A26A500F19CD7 /* WSUploadDownloadRequest.m */; };
 		7C89899E1B4B5B9F00289689 /* libWSBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8989921B4B5B9F00289689 /* libWSBase.a */; };
 		7C898ABE1B4B5C8500289689 /* NSArray+WSBaseUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8989B91B4B5C8500289689 /* NSArray+WSBaseUtil.m */; };
 		7C898AC21B4B5C8500289689 /* NSDictionary+WSBaseUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8989BD1B4B5C8500289689 /* NSDictionary+WSBaseUtil.m */; };
@@ -164,6 +166,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7C33E7F21B6A26A500F19CD7 /* WSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSService.h; sourceTree = "<group>"; };
+		7C33E7F31B6A26A500F19CD7 /* WSService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSService.m; sourceTree = "<group>"; };
+		7C33E7F41B6A26A500F19CD7 /* WSUploadDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSUploadDownloadRequest.h; sourceTree = "<group>"; };
+		7C33E7F51B6A26A500F19CD7 /* WSUploadDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSUploadDownloadRequest.m; sourceTree = "<group>"; };
 		7C8989921B4B5B9F00289689 /* libWSBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWSBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C89899D1B4B5B9F00289689 /* WSBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8989A31B4B5B9F00289689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -434,6 +440,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C33E7F11B6A269800F19CD7 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				7C33E7F21B6A26A500F19CD7 /* WSService.h */,
+				7C33E7F31B6A26A500F19CD7 /* WSService.m */,
+				7C33E7F41B6A26A500F19CD7 /* WSUploadDownloadRequest.h */,
+				7C33E7F51B6A26A500F19CD7 /* WSUploadDownloadRequest.m */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		7C8989891B4B5B9F00289689 = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +474,7 @@
 		7C8989941B4B5B9F00289689 /* WSBase */ = {
 			isa = PBXGroup;
 			children = (
+				7C33E7F11B6A269800F19CD7 /* service */,
 				7C8989B71B4B5C8500289689 /* Category */,
 				7C8989C81B4B5C8500289689 /* CustomComponents */,
 				7C898A381B4B5C8500289689 /* ThirdComponents */,
@@ -1121,6 +1139,7 @@
 				7C898B431B4B5C8500289689 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				7C898AF81B4B5C8500289689 /* WSNavigationBarView.m in Sources */,
 				7C898B121B4B5C8500289689 /* WSTableToastView.m in Sources */,
+				7C33E7F71B6A26A500F19CD7 /* WSUploadDownloadRequest.m in Sources */,
 				7C898B6D1B4B5C8600289689 /* MKAnnotationView+WebCache.m in Sources */,
 				7C898AED1B4B5C8500289689 /* WSNavigationBarCenterImageViewLabelView.m in Sources */,
 				7C898B9C1B4B5C8600289689 /* WSJsonUtil.m in Sources */,
@@ -1175,6 +1194,7 @@
 				7C898B871B4B5C8600289689 /* UIImageView+HighlightedWebCache.m in Sources */,
 				7C898ACA1B4B5C8500289689 /* UILabel+WSBaseUtil.m in Sources */,
 				7C898B1C1B4B5C8500289689 /* WSTabSlideBgImageView.m in Sources */,
+				7C33E7F61B6A26A500F19CD7 /* WSService.m in Sources */,
 				7C898B571B4B5C8600289689 /* MJRefreshComponent.m in Sources */,
 				7C898B541B4B5C8500289689 /* split.c in Sources */,
 				7C898B591B4B5C8600289689 /* MJRefreshConst.m in Sources */,
@@ -1430,6 +1450,7 @@
 				7C8989B61B4B5C6500289689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
